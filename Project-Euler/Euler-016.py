@@ -7,4 +7,4 @@ def power_digit_sum(number, power):
     return digit_sum
 
 
-print(power_digit_sum(2,1000))
+print(power_digit_sum(2, 1000))
