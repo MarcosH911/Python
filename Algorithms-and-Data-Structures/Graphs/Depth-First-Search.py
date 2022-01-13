@@ -27,4 +27,3 @@ def dfs_paths(graph, start, goal):
                 yield path + [nxt]
             else:
                 stack.append((nxt, path + [nxt]))
-                
