@@ -2,7 +2,7 @@
 def abundant_numbers(max_num):
     divisors_list = []
     for x in range(1, max_num):
-        for y in range(1, x//2 + 1):
+        for y in range(1, x // 2 + 1):
             if x % y == 0:
                 divisors_list.append(y)
         if sum(divisors_list) > x:
@@ -15,7 +15,7 @@ def non_abundant_sum():
     abundant_numbers_list = []
     for i in abundant_numbers(14075):
         abundant_numbers_list.append(i)
-        
+
     for x in range(1, 28124):
         keep_going = True
         while keep_going:
@@ -50,3 +50,6 @@ def non_abundant_sum():
                 keep_going = False
 
     return total_sum
+
+
+print(non_abundant_sum())
