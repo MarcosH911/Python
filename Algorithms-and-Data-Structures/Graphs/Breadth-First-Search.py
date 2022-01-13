@@ -25,4 +25,3 @@ def shortest_path_bfs(graph, start, goal):
         return next(bfs_paths(graph, start, goal))
     except StopIteration:
         return None
-      
