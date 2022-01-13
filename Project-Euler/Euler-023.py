@@ -1,6 +1,4 @@
-from time import perf_counter
-
-
+# Unfinished
 def abundant_numbers(max_num):
     divisors_list = []
     for x in range(1, max_num):
@@ -15,12 +13,10 @@ def abundant_numbers(max_num):
 def non_abundant_sum():
     total_sum = 0
     abundant_numbers_list = []
-    keep_going = True
     for i in abundant_numbers(14075):
         abundant_numbers_list.append(i)
-    print(abundant_numbers_list)
+        
     for x in range(1, 28124):
-        print(x)
         keep_going = True
         while keep_going:
             if x % 12 == 0 and x != 12:
@@ -54,9 +50,3 @@ def non_abundant_sum():
                 keep_going = False
 
     return total_sum
-
-
-start_timer = perf_counter()
-print(non_abundant_sum())
-end_timer = perf_counter()
-print(end_timer - start_timer)
